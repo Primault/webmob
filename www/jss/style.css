@@ -1,0 +1,65 @@
+/* 
+    Document   : style
+    Created on : 19 nov. 2013, 11:29:21
+    Author     : stage
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {     
+    background-color: transparent;
+    color: #333;
+    font-family: Arial;
+    background-image: #aaa url("../img/bg-maison.png");
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear :both;
+}    
+
+.wrapper {
+    width: 100%;
+    display:block;
+    position: static;
+}
+
+#header {
+    display :block;
+    width : 980px;
+    margin: 0 auto;
+    alignment-adjust: middle;
+}
+
+#header img.logo {
+    float:left;
+}
+
+#header .titre {
+    float:left;
+}
+
+#header h1 {
+    color :#00f;
+    margin :5px;
+    padding:0;
+}
+
+#header h2 {
+    color : #0f0;
+    margin :5px;
+    padding:0;
+}
