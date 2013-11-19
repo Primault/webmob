@@ -11,10 +11,17 @@
 <link rel="apple-touch-icon" sizes="72x72" href="img/logo-72.png"/>
 <link rel="apple-touch-icon" sizes="114x114" href="img/logo-114.png"/>
 <link rel="apple-touch-startup-image" href="img/splash-touch.png"/>
-        
+<script type="text/javascript" src="jss/librairie.js"> </script>
+<script type="text/javascript">
+            myGps.init()
+
+            function displayGeo() {
+                document.getElementById("geolocBox").innerHTML = myGps.get();
+            }
+</script>        
 <title>Titre de page</title>
 </head>
-<body>	
+<body onload="displayGeo()">	
         <header class="wrapper">
             <a href="index.html" id="header">
                 <img src="img/logo-72.png" class="logo" alt="logo myBd" title="Moteur de recherche de Bd"/>
@@ -37,8 +44,11 @@
         </div>
         <br class="clear"/>
         <section class="wrapper">
-            <article>
-                <h1>Random</h1>
+            <article>             
+                <p>Vos informations de géolocalisation sont les suivantes :
+                    <br/>
+                    <span id="geolocBox"><i>aucune</i></span>
+                </p>
             </article>
         </section> 
         <footer>
