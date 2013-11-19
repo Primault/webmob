@@ -63,3 +63,57 @@ a {
     margin :5px;
     padding:0;
 }
+
+#menu {
+    display :block;
+    width : 980px;
+    margin: 0 auto;
+    alignment-adjust: middle;    
+}
+
+#menu ul {
+    display:block;
+    width:100%;
+    list-style-type: non;    
+}
+
+#menu ul li {
+    display:block;
+    width:25%;
+    float: left;
+    background-color: #333;
+}
+
+#menu ul li :hover {
+    background-color: #a60cd2;
+}
+
+#menu ul li a {
+    background-color: salmon;
+}
+#footer {
+    display :block;
+    width : 980px;
+    margin: 0 auto;
+    alignment-adjust: middle;    
+}
+
+#footer ul {
+    display:block;
+    width:100%;
+    list-style-type: non;    
+}
+
+#footer ul li {
+    display:block;
+    width:25%;
+    float: left;
+}
+
+#footer ul li :hover {
+    background-color: transparent;
+}
+
+#footer ul li a {
+    color:#000;
+}
