@@ -1,0 +1,96 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="HandheldFriendly" content="true"/> 
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jss/style.css"/>
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link rel="apple-touch-icon" href="img/logo-57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="img/logo-72.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="img/logo-114.png"/>
+<link rel="apple-touch-startup-image" href="img/splash-touch.png"/>
+        
+<title>Titre de page</title>
+</head>
+<body>	
+        <div class="wrapper">
+            <a href="index.html" id="header">
+                <img src="img/logo-72.png" class="logo" alt="logo myBd" title="Moteur de recherche de Bd"/>
+                <div class="titre">
+                    <h1>MyBd.fr</h1>
+                    <h2>plein d'infos sur les BD</h2>
+                </div>
+            </a>
+        </div>
+        <br class="clear"/>
+        <div class="wrapper">
+            <div id="menu">
+              <ul> 
+                  <li> <a href="search.html">Recherche</a> </li> 
+                  <li> <a href="last.html">Dernière</a></li> 
+                  <li> <a href="random.html">Aléatoire</a></li> 
+                  <li> <a href="legal.html">Légal</a></li> 
+              </ul>   
+            </div>
+        </div>
+        <br class="clear"/>
+        <div class="wrapper">
+            <div id="content">
+                <h1>Recherchez une Bande dessinée ?</h1>
+                <form action="search.html" method="GET">
+                    <fieldset>
+                        <legend>Critère de recherche</legend>
+                        <div class="column">
+                            <div>
+                                <label for="auteur">Auteur</label>
+                                <input id="auteur" name="auteur">
+                            </div>
+                            <div>
+                                <label for="nationalite">Nationalité</label>
+                                <input id="nationalite" name="nationalite">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div>
+                                <label for="titre">Titre</label>
+                                <input id="titre" name="titre">
+                            </div>
+                            <div>
+                                <label for="annee">Année</label>
+                                <input id="annee" name="annee">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div>
+                                <label for="prix">Prix</label>
+                                <input id="prix" name="prix">
+                            </div>
+                            <div>
+                                <label for="dispo">Disponibilité</label>
+                                <input id="dispo" name="dispo">
+                            </div>
+                        </div>
+                        <br class="clear"/>
+                        <div class="footer">
+                            <div>
+                                <input type="submit" id="submit" name="submit" value="Rechercher">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <br class="clear"/>
+        <div id="footer">
+              <ul> 
+                  <li> <a href="search.html">Recherche</a></li> 
+                  <li> <a href="last.html">Dernière</a></li> 
+                  <li> <a href="random.html">Aléatoire</a></li> 
+                  <li> <a href="legal.html">Légal</a></li> 
+              </ul>   
+        </div>
+        <br class="clear"/>
+</body>
+</html>
