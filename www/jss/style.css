@@ -1,3 +1,37 @@
+@keyframes monanim {
+0%   {background: red;}
+25%  {background: yellow; }
+50%  {background: blue; }
+75%  {background: green;}
+100% {background: red; }   
+}
+
+@-webkit-keyframes monanim /* Safari and Chrome */
+{
+0%   {background: red; }
+25%  {background: yellow; }
+50%  {background: blue; }
+75%  {background: green;}
+100% {background: red;}
+}
+
+@keyframes monanim2 {
+0%   {background: blue; left:0px; top:0px;}
+25%  {background: red; left:200px; top:0px;}
+50%  {background: green; left:200px; top:200px;}
+75%  {background: red; left:0px; top:200px;}
+100% {background: yellow; left:0px; top:0px;}  
+}
+
+@-webkit-keyframes monanim2 /* Safari and Chrome */
+{
+0%   {background: blue; left:0px; top:0px;}
+25%  {background: red; left:200px; top:0px;}
+50%  {background: green; left:200px; top:200px;}
+75%  {background: red; left:0px; top:200px;}
+100% {background: yellow; left:0px; top:0px;}
+}
+
 body {     
     color: #333;
     font-family: Arial;
@@ -35,6 +69,11 @@ a {
 
 #header img.logo {
     float:left;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);    
 }
 
 #header .titre {
@@ -45,12 +84,20 @@ a {
     color :#00f;
     margin :5px;
     padding:0;
+    animation-name:moanim;
+    animation-duration:4s;
+    -webkit-animation-name: monanim;
+    -webkit-animation-duration: 4s
 }
 
 #header h2 {
     color : #0f0;
     margin :5px;
     padding:0;
+    animation-name:moanim2;
+    animation-duration:4s;
+    -webkit-animation-name: monanim2;
+    -webkit-animation-duration: 4s    
 }
 
 #menu {
@@ -70,44 +117,52 @@ a {
     display:block;
     width:25%;
     float: left;
-    background-color: #333;
+    text-shadow: 2px 2px 2px #fff;
 }
 
-#menu ul li :hover {
+#menu ul li:hover a {
     background-color: #a60cd2;
+    transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    text-shadow: 5px 5px 5px #fff;
 }
 
 #menu ul li a {
     background-color: salmon;
+    display:block;
 }
-#footer {
+
+footer {
     display :block;
     width : 980px;
     margin: 0 auto;
     alignment-adjust: middle;    
 }
 
-#footer ul {
+footer ul {
     display:block;
     width:100%;
     list-style-type: non;    
 }
 
-#footer ul li {
+footer ul li {
     display:block;
     width:25%;
     float: left;
 }
 
-#footer ul li :hover {
+footer ul li :hover {
     background-color: transparent;
 }
 
-#footer ul li a {
+footer ul li a {
     color:#000;
 }
 
-#content {
+article {
     width: 700px;
     margin:0 auto;
 }

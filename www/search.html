@@ -1,7 +1,7 @@
 <!DOCTYPE html >
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="HandheldFriendly" content="true"/> 
 <meta name="MobileOptimized" content="320"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,65 +11,95 @@
 <link rel="apple-touch-icon" sizes="72x72" href="img/logo-72.png"/>
 <link rel="apple-touch-icon" sizes="114x114" href="img/logo-114.png"/>
 <link rel="apple-touch-startup-image" href="img/splash-touch.png"/>
+<script type="text/javascript" src="jss/librairie.js"> 
+            function memoriser() {
+                var form = document.forms[0];
+                myStore.set('auteur',form.auteur.value);
+                myStore.set('nationalite',form.nationalite.value);
+                myStore.set('titre',form.titre.value);
+                myStore.set('annee',form.annee.value);
+                myStore.set('prix',form.prix.value);
+                myStore.set('dispo',form.dispo.value);
+            }
+            function charger() {
+                var form = document.forms[0];
+                form.auteur.value = myStore.get('auteur')
+                form.nationalite.value = myStore.get('nationalite')
+                form.titre.value = myStore.get('titre')
+                form.annee.value = myStore.get('annee')
+                form.prix.value = myStore.get('prix')
+                form.dispo.value = myStore.get('dispo')
+            }
+            function reInit() {
+                myStore.clear()
+                var form = document.forms[0];
+                form.auteur.value =
+                    form.nationalite.value =
+                    form.titre.value =
+                    form.annee.value =
+                    form.prix.value =
+                    form.dispo.value = ""
+            }
+</script>
         
 <title>Titre de page</title>
 </head>
-<body>	
-        <div class="wrapper">
+<body  onload="charger()">	
+        <header class="wrapper">
             <a href="index.html" id="header">
                 <img src="img/logo-72.png" class="logo" alt="logo myBd" title="Moteur de recherche de Bd"/>
-                <div class="titre">
+                <hgroup>
                     <h1>MyBd.fr</h1>
                     <h2>plein d'infos sur les BD</h2>
-                </div>
+                </hgroup>
             </a>
-        </div>
+        </header>
         <br class="clear"/>
         <div class="wrapper">
-            <div id="menu">
+            <nav id="menu">
               <ul> 
                   <li> <a href="search.html">Recherche</a> </li> 
-                  <li> <a href="last.html">Dernière</a></li> 
-                  <li> <a href="random.html">Aléatoire</a></li> 
-                  <li> <a href="legal.html">Légal</a></li> 
+                  <li> <a href="last.html">DerniÃ¨re</a></li> 
+                  <li> <a href="random.html">AlÃ©atoire</a></li> 
+                  <li> <a href="legal.html">LÃ©gal</a></li> 
               </ul>   
-            </div>
+            </nav>
         </div>
         <br class="clear"/>
-        <div class="wrapper">
-            <div id="content">
-                <h1>Recherchez une Bande dessinée ?</h1>
+        <section class="wrapper">
+            <article>            
+                <h1>Recherchez une Bande dessinÃ©e ?</h1>
                 <form action="search.html" method="GET">
                     <fieldset>
-                        <legend>Critère de recherche</legend>
+                        <legend>CritÃ¨re de recherche</legend>
                         <div class="column">
                             <div>
                                 <label for="auteur">Auteur</label>
-                                <input id="auteur" name="auteur">
+                                <input id="auteur" name="auteur" onchange="memoriser()">
                             </div>
                             <div>
-                                <label for="nationalite">Nationalité</label>
-                                <input id="nationalite" name="nationalite">
+                                <label for="nationalite">NationalitÃ©</label>
+                                <input id="nationalite" name="nationalite" placeholder="FranÃ§aise" onchange="memoriser()">
                             </div>
                         </div>
                         <div class="column">
                             <div>
                                 <label for="titre">Titre</label>
-                                <input id="titre" name="titre">
+                                <input id="titre" name="titre" onchange="memoriser()">
                             </div>
                             <div>
-                                <label for="annee">Année</label>
-                                <input id="annee" name="annee">
+                                <label for="annee" >AnnÃ©e</label>
+                                <input id="annee" name="annee" type="range" min="2000" max="2015" onchange="memoriser()">
                             </div>
                         </div>
                         <div class="column">
                             <div>
                                 <label for="prix">Prix</label>
-                                <input id="prix" name="prix">
+                                <input id="prix" name="prix" onchange="memoriser()">
                             </div>
                             <div>
-                                <label for="dispo">Disponibilité</label>
-                                <input id="dispo" name="dispo">
+                                <label for="dispo">DisponibilitÃ©</label>
+                                <input id="dispo" name="dispo" onchange="memoriser()">
                             </div>
                         </div>
                         <br class="clear"/>
@@ -80,17 +110,19 @@
                         </div>
                     </fieldset>
                 </form>
-            </div>
-        </div>
+            </article>
+        </section>
         <br class="clear"/>
-        <div id="footer">
+        <footer>
+            <nav>
               <ul> 
                   <li> <a href="search.html">Recherche</a></li> 
-                  <li> <a href="last.html">Dernière</a></li> 
-                  <li> <a href="random.html">Aléatoire</a></li> 
-                  <li> <a href="legal.html">Légal</a></li> 
+                  <li> <a href="last.html">DerniÃ¨re</a></li> 
+                  <li> <a href="random.html">AlÃ©atoire</a></li> 
+                  <li> <a href="legal.html">LÃ©gal</a></li> 
               </ul>   
-        </div>
+            </nav>
+        </footer>    
         <br class="clear"/>
 </body>
 </html>
