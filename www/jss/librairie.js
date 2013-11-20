@@ -36,7 +36,13 @@ myGps.init = function()  {
     return this;
 }
 myGps.update = function()  {
-    navigator.geolocation.getCurrentPosition(myGps._set, myGps._onError);
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(myGps._set, myGps._onError);
+    }
+    else {
+        alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
+    }
+    
     return this;
 }
 myGps._set = function(position)  {
