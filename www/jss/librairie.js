@@ -3,14 +3,16 @@ myStore = {
 }
 myStore.set = function(key,val)  {
     if (localStorage)
-        localStorage.setItem(key,val);
+ //       localStorage.setItem(key,val);
+     localStorage[key]=JSON.stringify(val);
     else if(this.displayError)
         this.displayUnsupported()
     return this;
 }
 myStore.get = function(key)  {
     if (localStorage)
-        return localStorage.getItem(key);
+//        return localStorage.getItem(key);
+    return JSON.parse(localStorage[key]);
     else if(this.displayError)
         this.displayUnsupported()
     return false;
