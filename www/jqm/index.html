@@ -30,8 +30,9 @@
                  $("#geoMap").gmap().bind("init",function(ev,map){
                      $('#geoMap').gmap('addMarker', { 'position': new google.maps.LatLng(position.coords.latitude, position.coords.longitude),'bounds': true } ).click(function(){
                          $('#geoMap').gmap('openInfoWindow', {'content': 'Votre position !!!<br/>'+document.getElementById("geolocBox").innerHTML}, this);
-                     });
-                   });
+                      });  
+                    $("#geoMap").gmap("option",'zoom',14);
+                   });                   
                 });
             }
             function memoriser() {
