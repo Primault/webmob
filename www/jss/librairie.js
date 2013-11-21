@@ -10,9 +10,13 @@ myStore.set = function(key,val)  {
     return this;
 }
 myStore.get = function(key)  {
-    if (localStorage)
+    if (localStorage ) {
 //        return localStorage.getItem(key);
-    return JSON.parse(localStorage[key]);
+        if( localStorage[key])
+            return JSON.parse(localStorage[key]);
+        else 
+            return "";
+    }
     else if(this.displayError)
         this.displayUnsupported()
     return false;
@@ -37,9 +41,11 @@ myGps.init = function()  {
     myGps.update();
     return this;
 }
-myGps.update = function()  {
+myGps.update = function(callback)  {
+    if(typeof callback !== 'function')
+        callback = myGps._set;
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(myGps._set, myGps._onError);
+        navigator.geolocation.getCurrentPosition(callback, myGps._onError);
     }
     else {
         alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
