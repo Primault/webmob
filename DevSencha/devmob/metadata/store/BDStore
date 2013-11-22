@@ -1,0 +1,42 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "{ \"id\":1, \"nom\": \"lucky luke\", \"titre\": \"gosciny\" },\r",
+            "{ \"id\":2, \"nom\": \"Asterix\", \"titre\": \"herge\" }\r",
+            "]"
+        ],
+        "model": "Bd",
+        "storeId": "BDStore",
+        "designer|userClassName": "BDStore"
+    },
+    "designerId": "9bb323f0-48f2-4e9a-a999-2079d4535d9c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "25929f66-ecd3-4c6e-8702-57d3f1f772a3",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "42409404-2aeb-4681-941d-280773868f51"
+                }
+            ]
+        }
+    ]
+}

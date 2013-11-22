@@ -1,0 +1,79 @@
+{
+    "name": "devmob",
+    "settings": {
+        "sdkPath": "C:/touch-2.2.0",
+        "urlPrefix": "",
+        "exportPath": "C:/Users/stage/Documents/NetBeansProjects/webmob/www/Sencha"
+    },
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1039,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "370ceed1-e204-43e4-8978-674170e4785a": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "fb189115-c7df-49b2-8657-dd32fe265b9b": {
+            "paths": [
+                "metadata/resource/packager",
+                "",
+                "packager.json"
+            ],
+            "className": "packager"
+        },
+        "80b70d39-ef3c-4be2-a4eb-c35238d5b2c1": {
+            "paths": [
+                "metadata/view/main",
+                "app/view/override/main.js",
+                "app/view/main.js"
+            ],
+            "className": "main"
+        },
+        "ddf0ff5d-9c93-48ee-b089-f4144ce3025c": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        },
+        "9bb323f0-48f2-4e9a-a999-2079d4535d9c": {
+            "paths": [
+                "metadata/store/BDStore",
+                "app/store/override/BDStore.js",
+                "app/store/BDStore.js"
+            ],
+            "className": "BDStore"
+        },
+        "5bf64cb6-2263-4ff8-b7d8-a5cb0ce7113e": {
+            "paths": [
+                "metadata/model/Bd",
+                "app/model/override/Bd.js",
+                "app/model/Bd.js"
+            ],
+            "className": "Bd"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "80b70d39-ef3c-4be2-a4eb-c35238d5b2c1"
+        ],
+        "store": [
+            "9bb323f0-48f2-4e9a-a999-2079d4535d9c"
+        ],
+        "controller": [],
+        "model": [
+            "5bf64cb6-2263-4ff8-b7d8-a5cb0ce7113e"
+        ],
+        "resource": [
+            "370ceed1-e204-43e4-8978-674170e4785a",
+            "fb189115-c7df-49b2-8657-dd32fe265b9b",
+            "ddf0ff5d-9c93-48ee-b089-f4144ce3025c"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

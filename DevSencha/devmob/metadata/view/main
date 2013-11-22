@@ -1,0 +1,130 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "main",
+        "designer|initialView": true
+    },
+    "designerId": "80b70d39-ef3c-4be2-a4eb-c35238d5b2c1",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Accueil",
+                "iconCls": "home",
+                "html": "<h1>Titre</h1>",
+                "styleHtmlContent": true
+            },
+            "designerId": "e6dc873e-9c1a-403a-9b48-dc88ee4c2ff8"
+        },
+        {
+            "type": "Ext.carousel.Carousel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Caroussel",
+                "iconCls": "favorites",
+                "html": ""
+            },
+            "designerId": "66318a46-027d-459a-a36a-3bde93a77c24",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "Première fiche"
+                    },
+                    "designerId": "f0e6bc9d-fc2f-4855-81d0-255b276c8a9d"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "Seconde fiche"
+                    },
+                    "designerId": "37b7d4f7-6941-47d9-8a4a-caa4d07ec86b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Liste",
+                "iconCls": "info",
+                "html": "",
+                "store": "BDStore"
+            },
+            "designerId": "845f38fd-fad7-47a6-b422-40c9d3e8c04a",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>{id} - {nom} : {titre}</div>\r",
+                            ""
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "e5ec9fe9-f1c5-4b4d-b725-7fb73ef8fc87"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Carte",
+                "badgeText": "Modif",
+                "iconCls": "maps",
+                "html": ""
+            },
+            "designerId": "6ad0aafb-71a5-4c1f-a482-9db05acbe93c"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "1c5a8cce-3e40-438d-a05c-72ae5b7c047e"
+        }
+    ]
+}
