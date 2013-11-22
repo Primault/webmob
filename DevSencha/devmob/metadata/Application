@@ -6,16 +6,30 @@
     },
     "codeClass": null,
     "userConfig": {
-        "models": [
-            "Bd"
-        ],
-        "stores": [
-            "BDStore"
-        ],
         "views": [
             "main"
         ],
+        "controllers": [
+            "MainController"
+        ],
         "name": "devmob"
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "console.log( \"lancement de l'application\" );"
+                ]
+            },
+            "designerId": "b158289a-ce1c-490a-92a9-7fc48c16fd2b"
+        }
+    ]
 }

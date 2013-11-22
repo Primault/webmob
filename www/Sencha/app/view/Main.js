@@ -46,6 +46,8 @@ Ext.define('devmob.view.main', {
                 title: 'Liste',
                 iconCls: 'info',
                 html: '',
+                id: 'listevue',
+                itemId: 'listevue',
                 itemTpl: [
                     '<div>{id} - {nom} : {titre}</div>',
                     ''

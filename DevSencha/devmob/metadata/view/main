@@ -77,6 +77,8 @@
                 "title": "Liste",
                 "iconCls": "info",
                 "html": "",
+                "id": "listevue",
+                "itemId": "listevue",
                 "store": "BDStore"
             },
             "designerId": "845f38fd-fad7-47a6-b422-40c9d3e8c04a",

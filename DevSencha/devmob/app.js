@@ -19,19 +19,16 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
-    models: [
-        'Bd'
-    ],
-    stores: [
-        'BDStore'
-    ],
     views: [
         'main'
+    ],
+    controllers: [
+        'MainController'
     ],
     name: 'devmob',
 
     launch: function() {
-
+        console.log( "lancement de l'application" );
         Ext.create('devmob.view.main', {fullscreen: true});
     }
 

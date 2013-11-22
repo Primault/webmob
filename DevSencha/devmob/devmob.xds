@@ -54,6 +54,14 @@
                 "app/model/Bd.js"
             ],
             "className": "Bd"
+        },
+        "8afb1e15-0d66-4081-97eb-5eda10fb9479": {
+            "paths": [
+                "metadata/controller/MainController",
+                "app/controller/override/MainController.js",
+                "app/controller/MainController.js"
+            ],
+            "className": "MainController"
         }
     },
     "viewOrderMap": {
@@ -63,7 +71,9 @@
         "store": [
             "9bb323f0-48f2-4e9a-a999-2079d4535d9c"
         ],
-        "controller": [],
+        "controller": [
+            "8afb1e15-0d66-4081-97eb-5eda10fb9479"
+        ],
         "model": [
             "5bf64cb6-2263-4ff8-b7d8-a5cb0ce7113e"
         ],
