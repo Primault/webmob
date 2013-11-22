@@ -77,10 +77,9 @@
                     url: "db.json",
                     data: "Data_Auteur=1",
                     success: function(json) {
-                        for (var key in json.Data) {
-                            console.log(key.auteur)
-                            $('#dataresult').append('<div>' + key['auteur'] + '<br />' + key['titre'] + '</div>');
-                        }
+                        $(json.Data).each(function(i, item) {                           
+                            $('#dataresult').append('<div>' + item.auteur + ' ' + item.titre + '</br>'+'</div>');
+                        });
                     }
                 });
             }
