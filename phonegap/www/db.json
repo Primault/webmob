@@ -1,0 +1,37 @@
+{ 
+  "Titre": "Auteurs", 
+  "Data": [ 
+      {
+          "auteur": "Emile Zola", 
+          "nationalite": "FR",
+          "titre": "Germinal",
+          "annee": "1885",
+          "prix": "35",
+          "dispo":"En stock"
+      }, 
+      {
+         "auteur": "Edmon Rostand", 
+          "nationalite": "FR",
+          "titre": "Cyrano de Bergerac",
+          "annee": "1897",
+          "prix": "35",
+          "dispo":"En stock"
+      }, 
+      {
+          "auteur": "Simone de Beauvoir", 
+          "nationalite": "FR",
+          "titre": "Le Sang des autres",
+          "annee": "1945",
+          "prix": "35",
+          "dispo":"En stock"
+      },
+      {
+          "auteur": "Albert Camus", 
+          "nationalite": "FR",
+          "titre": "La Peste",
+          "annee": "1947",
+          "prix": "35",
+          "dispo":"En stock"
+      }
+   ] 
+}

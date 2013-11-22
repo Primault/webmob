@@ -1,0 +1,7 @@
+#annee {
+    width:70%;
+    margin-left: 200px;
+}
+.row > input:not([type|=radio]):not([type|=checkbox]){
+    padding-top: 0;
+}
